@@ -49,13 +49,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "DelimitedText3",
+						"referenceName": "source_csv",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "DelimitedText3",
+						"referenceName": "sink_csv",
 						"type": "DatasetReference"
 					}
 				]
@@ -81,7 +81,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataset": {
-						"referenceName": "DelimitedText3",
+						"referenceName": "source_csv",
 						"type": "DatasetReference"
 					},
 					"enableLogging": false,

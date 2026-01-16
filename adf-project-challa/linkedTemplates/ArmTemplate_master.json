@@ -27,6 +27,10 @@
 			"type": "string",
 			"defaultValue": "/subscriptions/b5c51249-9051-4e24-b5b7-d0b1faba331e/resourceGroups/RG-ADFCourse/providers/Microsoft.Storage/storageAccounts/azurefreeproject"
 		},
+		"ManTrigger_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/b5c51249-9051-4e24-b5b7-d0b1faba331e/resourceGroups/RG-ADFCourse/providers/Microsoft.Storage/storageAccounts/azurefreeproject"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -68,6 +72,9 @@
 					},
 					"managertrigger_properties_typeProperties_scope": {
 						"value": "[parameters('managertrigger_properties_typeProperties_scope')]"
+					},
+					"ManTrigger_properties_typeProperties_scope": {
+						"value": "[parameters('ManTrigger_properties_typeProperties_scope')]"
 					}
 				}
 			},

@@ -1,0 +1,9 @@
+{
+	"name": "adf-project-challa",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "c61e7454-4820-4034-b088-9e1667885360",
+		"tenantId": "db7b1748-d2fd-43c2-ba93-c476c2e90101"
+	}
+}

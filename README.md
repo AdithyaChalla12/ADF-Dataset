@@ -41,9 +41,6 @@ The project simulates a real-world data engineering use case involving **credit 
 
 The pipeline is automatically triggered whenever a new CSV file is added to the source Blob Storage container, enabling fully automated ingestion without manual intervention.
 
-📷 *Event Trigger Configuration*  
-![Event Trigger](images/event-trigger.png)
-
 ---
 
 ### 2️⃣ Metadata-Driven File Processing
@@ -52,8 +49,6 @@ The pipeline is automatically triggered whenever a new CSV file is added to the 
 - **ForEach** iterates over incoming files  
 - **If Condition** validates and filters eligible CSV files  
 
-📷 *Get Metadata, ForEach, If Condition Activities*  
-![Metadata Processing](images/metadata-foreach.png)
 
 ---
 
@@ -61,9 +56,6 @@ The pipeline is automatically triggered whenever a new CSV file is added to the 
 
 - Modular pipeline design using **Execute Pipeline** activities  
 - Enables clean separation of ingestion, transformation, and loading logic  
-
-📷 *Pipeline Orchestration*  
-![Execute Pipeline](images/execute-pipeline.png)
 
 ---
 
@@ -77,8 +69,6 @@ The Mapping Data Flow performs the following transformations on transactional sa
 - Derived columns for enriched metrics  
 - Aggregations to compute sales summaries  
 
-📷 *Mapping Data Flow Design*  
-![Mapping Data Flow](images/mapping-data-flow.png)
 
 ---
 
@@ -88,12 +78,6 @@ The Mapping Data Flow performs the following transformations on transactional sa
 - Intermediate outputs stored in **Reporting Container**  
 - Final curated datasets written to **Destination Container**  
 
-📷 *Source Blob Container*  
-![Source Container](images/source-container.png)
-
-📷 *Destination Blob Container*  
-![Destination Container](images/destination-container.png)
-
 ---
 
 ### 6️⃣ Monitoring & Validation
@@ -101,9 +85,6 @@ The Mapping Data Flow performs the following transformations on transactional sa
 - Pipeline executions monitored using **ADF Monitoring**  
 - Debug runs used to validate data flow and logic  
 - Ensures reliable and repeatable pipeline execution  
-
-📷 *ADF Monitoring Dashboard*  
-![Pipeline Monitoring](images/pipeline-monitoring.png)
 
 ---
 

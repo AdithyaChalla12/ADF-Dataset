@@ -23,11 +23,7 @@
 			"type": "string",
 			"defaultValue": "https://raw.githubusercontent.com"
 		},
-		"managertrigger_properties_typeProperties_scope": {
-			"type": "string",
-			"defaultValue": "/subscriptions/b5c51249-9051-4e24-b5b7-d0b1faba331e/resourceGroups/RG-ADFCourse/providers/Microsoft.Storage/storageAccounts/azurefreeproject"
-		},
-		"ManTrigger_properties_typeProperties_scope": {
+		"Finalmanagertrigger_properties_typeProperties_scope": {
 			"type": "string",
 			"defaultValue": "/subscriptions/b5c51249-9051-4e24-b5b7-d0b1faba331e/resourceGroups/RG-ADFCourse/providers/Microsoft.Storage/storageAccounts/azurefreeproject"
 		},
@@ -70,11 +66,8 @@
 					"linkedservice_git_properties_typeProperties_url": {
 						"value": "[parameters('linkedservice_git_properties_typeProperties_url')]"
 					},
-					"managertrigger_properties_typeProperties_scope": {
-						"value": "[parameters('managertrigger_properties_typeProperties_scope')]"
-					},
-					"ManTrigger_properties_typeProperties_scope": {
-						"value": "[parameters('ManTrigger_properties_typeProperties_scope')]"
+					"Finalmanagertrigger_properties_typeProperties_scope": {
+						"value": "[parameters('Finalmanagertrigger_properties_typeProperties_scope')]"
 					}
 				}
 			},

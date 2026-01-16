@@ -17,10 +17,7 @@
 		"linkedservice_git_properties_typeProperties_url": {
 			"value": "https://raw.githubusercontent.com"
 		},
-		"managertrigger_properties_typeProperties_scope": {
-			"value": "/subscriptions/b5c51249-9051-4e24-b5b7-d0b1faba331e/resourceGroups/RG-ADFCourse/providers/Microsoft.Storage/storageAccounts/azurefreeproject"
-		},
-		"ManTrigger_properties_typeProperties_scope": {
+		"Finalmanagertrigger_properties_typeProperties_scope": {
 			"value": "/subscriptions/b5c51249-9051-4e24-b5b7-d0b1faba331e/resourceGroups/RG-ADFCourse/providers/Microsoft.Storage/storageAccounts/azurefreeproject"
 		},
 		"containerUri": {

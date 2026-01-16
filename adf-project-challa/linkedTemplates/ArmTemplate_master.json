@@ -65,13 +65,33 @@
 					},
 					"linkedservice_git_properties_typeProperties_url": {
 						"value": "[parameters('linkedservice_git_properties_typeProperties_url')]"
+					}
+				}
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "adf-project-challa_ArmTemplate_1",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2024-03-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_1.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
 					},
 					"Finalmanagertrigger_properties_typeProperties_scope": {
 						"value": "[parameters('Finalmanagertrigger_properties_typeProperties_scope')]"
 					}
 				}
 			},
-			"dependsOn": []
+			"dependsOn": [
+				"[resourceId('Microsoft.Resources/deployments', 'adf-project-challa_ArmTemplate_0')]"
+			]
 		}
 	]
 }
